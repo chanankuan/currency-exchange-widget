@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ======== CSS ======== -->
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <title>Currency Exchange Widget</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">Currency Exchange Widget</div>
+
+      <div class="widget">
+        <span class="widget__header">You will pay</span>
+        <div class="widget__calc-field">
+          <select class="currency1"></select>
+          <div class="widget__calc-field-numb">
+            <label for="calculator-ask">You will pay</label>
+            <input
+              type="number"
+              step="0.01"
+              name="calculator-ask"
+              class="from-amount"
+              value="1000" />
+          </div>
+        </div>
+        <span class="widget__header">You will receive</span>
+        <div class="widget__calc-field">
+          <div class="widget__calc-field-numb">
+            <label for="calculator-ask">You will receive</label>
+            <input
+              type="number"
+              step="0.01"
+              name="calculator-ask"
+              class="to-amount" />
+          </div>
+        </div>
+
+        <button id="toggleBtn">
+          <img src="./images/replace-icon.svg" alt="" width="40" height="40" />
+        </button>
+      </div>
+    </div>
+
+    <div class="grid"></div>
+
+    <!-- ======== JS main ======== -->
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
